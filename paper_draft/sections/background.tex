@@ -1,0 +1,38 @@
+\section{Background and Related Work}
+
+The systematic study of mathematical creativity and novel concept generation has emerged as a rigorous research domain incorporating quantitative frameworks and computational approaches. This section reviews key developments in the field and establishes the theoretical foundations for our work.
+
+\subsection{Literature Review}
+
+The formal analysis of mathematical creativity gained significant momentum with Varshney's foundational work \cite{varshney2019mathematical}, which established limit theorems for computational creativity. This framework models novel idea generation as a stochastic process $\mathcal{P}(x,t)$ where new mathematical structures emerge from combinations of existing knowledge representations. For a given mathematical domain $\mathcal{D}$, the probability of generating a novel concept $x$ satisfying quality threshold $q$ is bounded by:
+
+\[P(N(x) \geq \alpha \land Q(x) \geq q) \leq C e^{-\lambda d(x,\mathcal{K})} \]
+
+where $N(x)$ measures novelty, $Q(x)$ measures quality, and $d(x,\mathcal{K})$ represents distance from existing knowledge $\mathcal{K}$.
+
+Recent work by Usodo et al. \cite{usodo2020relational} established crucial connections between relational thinking skills and creative problem-solving in mathematics. Their research demonstrated that students with stronger relational thinking abilities, measured through a standardized metric $R(s)$, showed significantly higher rates of novel solution generation in mathematical tasks.
+
+Computational frameworks for creativity have been further developed through studies of specific domains. Selvi \cite{selvi2025mathematical} introduced parametric optimization approaches for creative design, while Tunçeli et al. \cite{eli2025parental} examined the emergence of mathematical-computational thinking in early development. The latter work provided evidence for measurable creative capability development using entropy-based metrics $H(t)$.
+
+Cross-cultural investigations by Rocena and Joaquin \cite{rocena2021comparative} revealed universal patterns in mathematical creativity across different educational contexts. Their work supports the existence of domain-independent creativity metrics that align with our theoretical framework.
+
+Recent studies have begun exploring the intersection of computational thinking and creativity. Schuhmacher \cite{schuhmacher2023computational} established correlations between computational thinking abilities and novel mathematical idea generation. Her et al. \cite{her2024investigating} examined how generative AI impacts creative mathematical thinking, while Fuat et al. \cite{fuat2025exploring} demonstrated applications in geometric reasoning.
+
+\subsection{Mathematical Foundations}
+
+Our work builds on these previous results by introducing several key mathematical structures:
+
+1. A probability space $(\Omega, \mathcal{F}, P)$ where $\Omega$ represents all possible mathematical concepts within a domain
+
+2. An entropy measure for novelty assessment:
+\[H(x) = -\sum_{i=1}^n p_i \log p_i\]
+where $p_i$ represents the probability of concept $x$ containing feature $i$
+
+3. Topological invariants $\tau(S)$ characterizing solution spaces:
+\[\tau(S) = \{\beta_0(S), \beta_1(S), ..., \beta_n(S)\}\]
+where $\beta_k$ are Betti numbers
+
+4. A similarity kernel between mathematical structures:
+\[K(x,y) = \exp(-\gamma \|x-y\|^2)\]
+
+These foundations enable rigorous analysis of both human and computational creative processes in mathematics, providing the theoretical framework for our main results.

@@ -1,0 +1,37 @@
+\section{Limitations and Future Work}
+
+While our framework provides theoretical bounds on mathematical novelty generation, several important limitations must be acknowledged:
+
+\subsection{Assumption Limitations}
+
+The primary theoretical limitations stem from our core assumptions:
+
+1. The creativity entropy $H(S)$ is assumed to be well-defined and finite for all solution spaces. This may not hold for spaces with infinite-dimensional structure or fractal properties where $\dim(S) = \infty$. In such cases, our bounds become undefined or potentially divergent.
+
+2. The topological invariant $\tau(S)$ requires the solution space to be compact and Hausdorff. Many practically relevant spaces, particularly those involving discontinuous or singular mathematical structures, may fail to satisfy these conditions, limiting the applicability of Theorem 2.
+
+3. Our kernel bounds in Lemma 3 implicitly assume $C^2$ smoothness of the quality functional $Q: S \rightarrow \mathbb{R}$. For spaces containing discontinuous or singular mathematical structures, these bounds may fail to hold.
+
+\subsection{Technical Constraints}
+
+Several technical limitations affect the practical application of our results:
+
+1. The current framework assumes static solution spaces, whereas real mathematical discovery often involves dynamic evolution of the underlying structure. Specifically, for time-varying spaces $S(t)$, our entropy bound
+\[
+H(S) \leq K \log(|\Phi(S)|)
+\]
+may not capture temporal dependencies.
+
+2. The computational complexity of evaluating $\tau(S)$ grows super-exponentially with $\dim(S)$, making practical calculations infeasible for high-dimensional mathematical structures.
+
+\subsection*{Future Work}
+
+These limitations suggest several promising directions for future research:
+
+1. Extending the framework to handle infinite-dimensional and non-compact solution spaces through localization techniques.
+
+2. Developing dynamic variants of the creativity entropy that can capture temporal evolution of mathematical structures.
+
+3. Investigating whether weaker topological conditions can yield similar bounds while accommodating a broader class of solution spaces.
+
+4. Establishing computational approximation schemes for $\tau(S)$ that remain tractable in higher dimensions.
